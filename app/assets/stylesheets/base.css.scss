@@ -74,9 +74,10 @@ header {
     width: 90%;
     margin: 0 auto;
     #logo {
-      display: inline-block;
-      width: 10rem;
-      float: left;
+      color: white;
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 700;
     }
     nav {
       float: right;
