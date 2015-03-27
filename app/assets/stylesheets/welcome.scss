@@ -34,7 +34,7 @@
   }
   .name {
     @include bold_font;
-    color: $dark_gray;
+    color: $poppyseed;
     margin: 0;
     font-size: .85rem;
   }
@@ -59,7 +59,7 @@
     float: left;
     i {
       font-size: 2.5rem;
-      color: $green;
+      color: $mid-yellow;
     }
     h2 {
       @include bold_font;
@@ -77,7 +77,7 @@
   padding: 7.5rem 0;
   h2 {
     @include bold_font;
-    color: $dark_gray;
+    color: $poppyseed;
     font-size: 3rem;
     margin: 0;
   }

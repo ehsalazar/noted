@@ -1,6 +1,6 @@
-$dark_gray: #2B2E2E;
-$light_gray: #C0C1C1;
-$green: #33CD99;
+$poppyseed: #30352F;
+$poppy: #FF5340;
+$mid-yellow: #FDBD65;
 
 @mixin bold_font {
   font-family: "Brandon Grotesque","Helvetica Neue", Helvetica, sans-serif;
@@ -41,7 +41,7 @@ body {
 button, .button {
   border: none;
   outline: none;
-  background: $green;
+  background: $mid-yellow;
   padding: 1rem 3.5rem;
   border-radius: 2rem;
   a {
@@ -56,20 +56,20 @@ button, .button {
 }
 
 a {
-  color: $green;
+  color: $mid-yellow;
   text-decoration: none;
   &:hover {
-    color: $dark_gray;
+    color: $poppyseed;
   }
 }
 
 header {
-  background: $dark_gray;
+  background: $poppyseed;
   position: fixed;
   top: 0;
   width: 100%;
   padding: 1.75rem 0;
-  border-bottom: 7px solid $green;
+  border-bottom: 7px solid $mid-yellow;
   .header_inner {
     width: 90%;
     margin: 0 auto;
@@ -88,7 +88,7 @@ header {
         line-height: 1.5;
         margin-left: 1rem;
         &:hover {
-          color: $green;
+          color: $mid-yellow;
         }
       }
     }
@@ -96,7 +96,7 @@ header {
 }
 
 footer {
-  background: $dark_gray;
+  background: $poppyseed;
   width: 100%;
   padding: 2rem 0;
   color: white;
@@ -111,7 +111,7 @@ footer {
 input[type="text"], input[type="email"], input[type="password"], textarea {
   width: 100%;
   margin-bottom: 1rem;
-  border: 1px solid $light_gray;
+  border: 1px solid $poppy;
   border-radius: .4rem;
 }
 
