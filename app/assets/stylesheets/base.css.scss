@@ -1,6 +1,6 @@
-$poppyseed: #24313B;
-$poppy: #2A544A;
-$mid-yellow: #4F9C4A;
+$dark-blue: #24313B;
+$dark-cyan: #2A544A;
+$green: #4F9C4A;
 
 @mixin bold_font {
   font-family: "Brandon Grotesque","Helvetica Neue", Helvetica, sans-serif;
@@ -11,6 +11,23 @@ $mid-yellow: #4F9C4A;
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
+}
+
+#notice_wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background: rgba(79, 156, 74, 0.75);
+  .alert, .notice {
+      padding: 2rem 0;
+      text-align: center;
+      margin: 0;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      letter-spacing: 1px;
+  }
 }
 
 body {
@@ -41,7 +58,7 @@ body {
 button, .button {
   border: none;
   outline: none;
-  background: $mid-yellow;
+  background: $green;
   padding: 1rem 3.5rem;
   border-radius: 2rem;
   a {
@@ -56,20 +73,20 @@ button, .button {
 }
 
 a {
-  color: $mid-yellow;
+  color: $green;
   text-decoration: none;
   &:hover {
-    color: $poppyseed;
+    color: $dark-blue;
   }
 }
 
 header {
-  background: $poppyseed;
+  background: $dark-blue;
   position: fixed;
   top: 0;
   width: 100%;
   padding: 1.75rem 0;
-  border-bottom: 7px solid $mid-yellow;
+  border-bottom: 7px solid $green;
   .header_inner {
     width: 90%;
     margin: 0 auto;
@@ -88,7 +105,7 @@ header {
         line-height: 1.5;
         margin-left: 1rem;
         &:hover {
-          color: $mid-yellow;
+          color: $green;
         }
       }
     }
@@ -96,7 +113,7 @@ header {
 }
 
 footer {
-  background: $poppyseed;
+  background: $dark-blue;
   width: 100%;
   padding: 2rem 0;
   color: white;
@@ -111,7 +128,7 @@ footer {
 input[type="text"], input[type="email"], input[type="password"], textarea {
   width: 100%;
   margin-bottom: 1rem;
-  border: 1px solid $poppy;
+  border: 1px solid $dark-cyan;
   border-radius: .4rem;
 }
 
