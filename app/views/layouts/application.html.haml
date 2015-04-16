@@ -7,6 +7,12 @@
   %link{:rel => "stylesheet", :href => "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"}/
   = csrf_meta_tags
 %body
+  - if notice
+    #notice_wrapper
+      %p.notice= notice
+  - elsif alert
+    #notice_wrapper
+      %p.alert= alert
   %header
     .header_inner
       = link_to "Noted", root_path, id: "logo"
@@ -16,7 +22,5 @@
           = link_to "Sign Out", destroy_user_session_path, method: :delete
         - else
           = link_to "Log In", new_user_session_path
-  %p.notice= notice
-  %p.alert= alert
 
   = yield
