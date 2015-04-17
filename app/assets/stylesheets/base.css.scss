@@ -95,6 +95,9 @@ header {
       font-size: 20px;
       text-transform: uppercase;
       font-weight: 700;
+      &:hover {
+        color: $green;
+      }
     }
     nav {
       float: right;
